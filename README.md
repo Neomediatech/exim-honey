@@ -1,17 +1,17 @@
-[![](https://images.microbadger.com/badges/version/neomediatech/exim-honey-alpine.svg)](https://microbadger.com/images/neomediatech/exim-honey-alpine)
-[![](https://images.microbadger.com/badges/image/neomediatech/exim-honey-alpine.svg)](https://microbadger.com/images/neomediatech/exim-honey-alpine)
-![](https://img.shields.io/github/last-commit/Neomediatech/exim-honey-alpine.svg?style=plastic)
-![](https://img.shields.io/github/repo-size/Neomediatech/exim-honey-alpine.svg?style=plastic)
+[![](https://images.microbadger.com/badges/version/neomediatech/exim-honey.svg)](https://microbadger.com/images/neomediatech/exim-honey)
+[![](https://images.microbadger.com/badges/image/neomediatech/exim-honey.svg)](https://microbadger.com/images/neomediatech/exim-honey)
+![](https://img.shields.io/github/last-commit/Neomediatech/exim-honey.svg?style=plastic)
+![](https://img.shields.io/github/repo-size/Neomediatech/exim-honey.svg?style=plastic)
 
-# exim-honey-alpine
-Dockerized version of exim as honeypot service, based on Alpine Linux
+# WARN! WIP!! YHBW...
+Dockerized version of exim as honeypot service, based on Ubuntu
 
 ## Usage
 You can run this container with this command:  
-`docker run -d --name exim-honey-alpine -p 25:25 -p 465:465 -p 587:587 neomediatech/exim-honey-alpine`  
+`docker run -d --name exim-honey -p 25:25 -p 465:465 -p 587:587 neomediatech/exim-honey`  
 
 Logs are written inside the container, in /var/log/exim/, and on stdout. You can see realtime logs running this command:  
-`docker logs -f exim-honey-alpine`  
+`docker logs -f exim-honey`  
 `CTRL c` to stop seeing logs.  
 
 If you want to map logs outside the container you can add:  
@@ -25,7 +25,7 @@ version: '3'
 
 services:  
   exim:  
-    image: neomediatech/exim-honey-alpine:latest  
+    image: neomediatech/exim-honey:latest  
     hostname: exim-honey  
     ports:  
       - '25:25'  
