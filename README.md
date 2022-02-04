@@ -1,5 +1,3 @@
-[![](https://images.microbadger.com/badges/version/neomediatech/exim-honey.svg)](https://microbadger.com/images/neomediatech/exim-honey)
-[![](https://images.microbadger.com/badges/image/neomediatech/exim-honey.svg)](https://microbadger.com/images/neomediatech/exim-honey)
 ![](https://img.shields.io/github/last-commit/Neomediatech/exim-honey.svg?style=plastic)
 ![](https://img.shields.io/github/repo-size/Neomediatech/exim-honey.svg?style=plastic)
 
